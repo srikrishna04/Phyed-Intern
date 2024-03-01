@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <link rel="stylesheet" href="./subjects.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <script src="assets/js/srich.js" defer></script>
+    <script src="assets/js/pow.js" defer></script>
+    <style>
+        img{
+            width:80%;
+        }
+        .slides{
+            text-align: center;
+        }
+        @media screen and (max-width:992px) {
+            img{
+                width:100%;
+            }
+        }
+    </style>
+</head>
+
+<body class="">
+    <div class="split left menu">
+        <div id="menu">
+            <div class="topic lead">Phyed</div>
+            <div class="upper">
+                <div class="righ display-6">
+                    Power Systems
+                </div>
+            </div>
+        </div>
+        <div class="containe menu-inner">
+            <div class="section" id="sect1">
+                <div class="lecture display-6">
+                    <!-- <h2>Lectures</h2> -->
+                    Lectures
+                </div>
+                <div class="out">
+                    <div class="progr"></div>
+                </div>
+                <ul class="navbar-nav lead">
+                    <li class="nav-item dropdown lead">
+                        <a class="nav-link dropdown-toggle link1" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Module-1
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-md-start" aria-labelledby="navbarDarkDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Introduction</a></li>
+                            <li><a class="dropdown-item" href="#">Forced Oscillations</a></li>
+                            <li><a class="dropdown-item" href="#">Damped Oscillations</a></li>
+                            <li><a class="dropdown-item" href="#">Coupled Oscillations</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown lead">
+                        <a class="nav-link dropdown-toggle link2" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Module-2
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-md-start" aria-labelledby="navbarDarkDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">EM-Waves</a></li>
+                            <li><a class="dropdown-item" href="#">Waves-Part1</a></li>
+                            <li><a class="dropdown-item" href="#">Waves-Part2</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown lead">
+                        <a class="nav-link dropdown-toggle link3" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Module-3
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-md-start" aria-labelledby="navbarDarkDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Diffraction</a></li>
+                            <li><a class="dropdown-item" href="#">Interference</a></li>
+                            <li><a class="dropdown-item" href="#">Polarization</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown lead">
+                        <a class="nav-link dropdown-toggle link4" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Module-4
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-md-start" aria-labelledby="navbarDarkDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Quantum Mechanics-1</a></li>
+                            <li><a class="dropdown-item" href="#">Quantum Mechanics-2</a></li>
+                            <li><a class="dropdown-item" href="#">Quantum Mechanics-3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+    <div id="onlySlider" class="carousel slide split right flex1" data-bs-touch="false">
+        <div class="head">
+            <div class="contains">
+                <button class="menu-icon" type="button">
+                    <span class="menu-icon-box">
+                        <span class="menu-icon-inner"></span>
+                    </span>
+                </button>
+            </div>
+            <div class="container headi">
+                <p class="lead headi">Module-1</p>
+            </div>
+        </div>
+        <!-- <div class="display-6">Thermodynamics</div> -->
+        <div class="carousel-inner slides" id="imgset">
+            <div class="carousel-item active">
+                <img src="./assets/POW/Module1_Introduction_SHM_00007/Module1_Introduction_SHM_00007.jpg"
+                    alt="Not Available">
+            </div>
+        </div>
+        <div class="button2">
+            <button class="carousel-control-prev b1" type="button" data-bs-target="#onlySlider" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="btn btn-outline-primary">Previous</span>
+            </button>
+            <button class="carousel-control-next b2" type="button" data-bs-target="#onlySlider" data-bs-slide="next">
+                <span class="carousel-control-next-icon " aria-hidden="true"></span>
+                <span class="btn btn-primary">Next</span>
+            </button>
+            <!-- <div class="play">
+            <div class="prev" id="prev">prev</div>
+            <div class="next" id="next">next</div>
+        </div> -->
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
